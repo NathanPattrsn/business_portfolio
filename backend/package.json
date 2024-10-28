@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "nodemailer": "^6.7.2" 
+  },
+  "scripts": {
+    "start": "node functions/contact.js" 
+  }
+}
