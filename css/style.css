@@ -1,0 +1,212 @@
+/* Reset body margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff; /* This line sets the text color to white */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff;
+}
+
+/* Toggler icon */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3crect width='30' height='3' y='7' rx='1.5' fill='%23ffffff'/%3e%3crect x='7' width='30' height='3' y='14' rx='1.5' fill='%23ffffff'/%3e%3crect width='30' height='3' y='21' rx='1.5' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+
+/* Full-screen container */
+.landing-page {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.about-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.work-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px 0; /* Add padding to the top and bottom */
+
+}
+
+.card {
+    border: none; /* Remove the border of the card */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    height: 100%; /* Ensure cards have the same height */
+    color: #000000;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 100%; /* Make cards take the full width */
+    }
+
+    .card-img-top {
+        height: 200px; /* Increase height for larger screens */
+    }
+
+    .card-body {
+        padding: 20px; /* Add more padding inside the card */
+    }
+}
+
+.center-content-work {
+    position: absolute;
+    z-index: 4; /* Make sure it stays on top */
+    max-width: 700px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+    pointer-events: auto; /* Enable pointer events */
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.center-content {
+    position: absolute;
+    z-index: 4; /* Make sure it stays on top */
+    max-width: 700px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+    pointer-events: auto; /* Enable pointer events */
+}
+
+.author-link {
+    position: relative;
+    z-index: 4; /* Make sure the link is above other elements */
+    color: #13d4d4;
+    text-decoration: none;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #13d4d4;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 1.2em;
+    color: #a3a3a3;
+    margin-bottom: 30px;
+}
+
+/* Testimonial section */
+.testimonial {
+    margin: 1em 0 2em;
+    padding: 0.5em 1em;
+    border-left: 3px solid #13d4d4;
+    color: #bfbfbf;
+}
+
+.stars span {
+    color: #ffd700;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.testimonial-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px 20px; /* Padding for top and bottom */
+}
+
+.center-content-testimonials {
+    position: relative;
+    z-index: 2; /* Ensure it appears above particles */
+    color: #fff;
+    text-align: center;
+    max-width: 800px; /* Limit max width */
+}
+
+.testimonial {
+    background: #000; /* Light background for readability */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.testimonial img {
+    width: 70px; /* Profile image size */
+    height: 70px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Footer styling */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    pointer-events: none; /* Disable pointer events */
+}
