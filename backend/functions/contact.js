@@ -1,10 +1,11 @@
 const nodemailer = require('nodemailer');
 
 exports.handler = async (event, context) => {
-    const data = JSON.parse(event.body);
+    // The body is received as a FormData object, so we need to parse it
+    const data = Object.fromEntries(new URLSearchParams(event.body));
 
     let transporter = nodemailer.createTransport({
-        service: 'gmail', // Or your chosen email service
+        service: 'gmail',
         auth: {
             user: process.env.EMAIL, // Your email
             pass: process.env.PASSWORD, // Your email password
@@ -22,7 +23,7 @@ exports.handler = async (event, context) => {
         await transporter.sendMail(mailOptions);
         return {
             statusCode: 200,
-            body: 'Email sent successfully!',
+            body: 'ok',
         };
     } catch (error) {
         return {
