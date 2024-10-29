@@ -10,7 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <title>About Us | OneSite Designs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <title>Cafe Website Design | OneSite Designs</title>
 </head>
 <body>
     <!--Header-->
@@ -34,16 +35,22 @@
         </nav>
     </header>
 
+    <a href="work.html" class="back-arrow" style="position: absolute; top: 120px; left: 20px; font-size: 24px; text-decoration: none;">
+        <i class="fa-solid fa-chevron-left"></i>
+    </a>
+
     <!-- Full-Screen Container -->
-    <div id="particles-js" class="about-page">
+    <div id="particles-js" class="project2-page">
         <!-- Central Content -->
         <div class="center-content text-center">
-            <h1>About OneSite <span class="underline">Designs</span></h1>
-
-            <!-- About Us Text -->
-            <div class="about-text mt-3 pt-3">
-                <p>At <strong>OneSite Designs</strong>, we specialize in providing customized digital designs and creating websites that meet your unique requirements. Our team of experts is committed to elevating your online presence and enhancing your business’s potential.</p>
-                <p>We pride ourselves on transparent communication, fostering open collaboration, and offering expert guidance throughout every project. Our commitment goes beyond aesthetics; we focus on functionality and effective SEO to bring your digital visions to life. Choose <strong>OneSite Designs</strong> as your partner for an exceptional and seamless online experience.</p>
+            <h1>Cafe Website Design</h1>
+            <p>This website design was created for any cafe. It's style is modern and clean with a warm and friendly design and colour scheme.
+                It is structured to make it easy to navigate and find what you are looking for. It is responsive and can be accessed on any device.
+                It also features images that are representative of typical cafe items, keeping the design consistent and clear of what the website is about.
+            </p>
+            <button class="btn" id="view-projectbtn">View Project</button>
+            <div id="project2img" class="project2img">
+            <img src="./images/design2.png" style="width: 450px;" alt="Project 2" id="projimg">
             </div>
         </div>
     </div>
@@ -56,5 +63,11 @@
     <!-- Custom JavaScript -->
     <script src="./js/index.js"></script>
     <script src="./js/particles-config.js"></script>
+
+    <script>
+        document.getElementById('view-projectbtn').addEventListener('click', function() {
+          window.open('https://onesitedesigns.wixsite.com/boujee-cafe', '_blank');
+        });
+      </script>
 </body>
 </html>

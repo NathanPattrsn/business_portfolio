@@ -15,7 +15,7 @@ nav {
     background-color: #000000;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 
 .navbar-brand, .nav-link {
@@ -59,6 +59,72 @@ nav {
     overflow: hidden;
     padding: 40px 0; /* Add padding to the top and bottom */
 
+}
+
+.project1-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project2-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project3-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#view-projectbtn {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #13d4d4;
+    padding: 10px 20px; /* Add some padding to the button */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none; /* Remove underline */
+}
+
+#view-projectbtn:hover {
+    background-color: #13d4d4;
+    color: #000000;
+}
+
+#projimg {
+    border-radius: 5px; /* Add rounded corners */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+#projimg:hover {
+    transform: scale(1.05); /* Scale up on hover */;
+}
+
+.back-arrow {
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    z-index: 1;
 }
 
 .card {
@@ -137,7 +203,6 @@ h1 {
 }
 
 .underline {
-    text-decoration: underline;
     color: #13d4d4;
 }
 
