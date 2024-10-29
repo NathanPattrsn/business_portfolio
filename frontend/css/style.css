@@ -182,6 +182,18 @@ nav {
 
     .navbar-brand {
         display: none !important;
+    }
+
+    .projectcontent {
+        margin-top: 40px !important;
+        overflow-y: scroll !important;
+        max-height: 550px !important;
+    }
+
+    .project1img img, .project2img img, .project3img img {
+        max-width: 300px !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
       }
 }
 
