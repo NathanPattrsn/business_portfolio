@@ -29,7 +29,7 @@ nav {
 
 /* Full-screen container */
 .landing-page {
-    flex: 1;
+    flex: 1; /* Allow this section to grow and fill the available space */
     position: relative;
     display: flex;
     justify-content: center;
@@ -158,6 +158,33 @@ nav {
     }
 }
 
+@media (max-width: 991px) {
+    body, html {
+        overflow-y: hidden;
+    }
+
+    header {
+        min-width: 100vw;
+    }
+
+    .work-page {
+        overflow-y: auto;
+       margin-top: 100px;
+       margin-bottom: 500px;
+    }
+    
+    .center-content-work {
+       max-height: 500px;
+       margin-bottom: 200px;
+       margin-top: 0px;
+       overflow-y: auto;
+    }
+
+    .navbar-brand {
+        display: none !important;
+      }
+}
+
 .center-content-work {
     position: absolute;
     z-index: 4; /* Make sure it stays on top */
@@ -168,12 +195,14 @@ nav {
     pointer-events: auto; /* Enable pointer events */
 }
 
+/* Keep particles background fixed to viewport */
 #particles-js {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Make particles take up full viewport height */
+    z-index: 0; /* Set lower z-index to stay behind other content */
 }
 
 
@@ -272,6 +301,6 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-    margin-top: auto;
+    margin-top: auto; /* Push footer to the bottom */
     pointer-events: none; /* Disable pointer events */
 }
