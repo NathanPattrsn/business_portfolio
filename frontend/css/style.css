@@ -111,6 +111,23 @@ nav {
     color: #000000;
 }
 
+#view-projectbtn-gh {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #13d4d4;
+    padding: 10px 20px; /* Add some padding to the button */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none; /* Remove underline */
+}
+
+#view-projectbtn-gh:hover {
+    background-color: #13d4d4;
+    color: #000000;
+}
+
 #projimg {
     border-radius: 5px; /* Add rounded corners */
     transition: transform 0.3s; /* Smooth transition for hover effect */
@@ -190,7 +207,7 @@ nav {
         max-height: 550px !important;
     }
 
-    .project1img img, .project2img img, .project3img img, .project4img img {
+    .project1img img, .project2img img, .project3img img, .project4img img, .project5img img {
         max-width: 300px !important;
         margin-bottom: 10px !important;
         text-align: center !important;
