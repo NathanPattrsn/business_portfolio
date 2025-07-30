@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
     <title>Bike Size Finder App | Nathan Patterson</title>
 </head>
+<style>
+    hr {
+        border: 1px solid #13d4d4;
+        width: 80%;
+        margin: 20px auto;
+    }
+</style>
 <body>
     <!--Header-->
     <header>
@@ -27,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="work.html">Our Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -45,9 +52,39 @@
         <div class="center-content text-center projectcontent">
             <h1>Bike Size Finder Web Application</h1>
             <p>This web application was created to help users find the correct bike size based on their height and inseam measurements. It features a user-friendly interface where users can input their measurements, and it provides instant feedback on the recommended bike size. The design is clean and modern, ensuring ease of use across all devices. <strong>It is still in early development.</strong></p>
-            <button class="btn" id="view-projectbtn">View Project</button>
+            <hr>
+            <h3>Tools & Technologies Used</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+            <li><strong>Vue.js 3</strong> – Built using Vue 3 with the Composition API and single-file components for modular development.</li>
+            <li><strong>Vue CLI</strong> – Used for project scaffolding, local development, and optimized production builds.</li>
+            <li><strong>JavaScript (ES6+)</strong> – Core application logic including state handling and dynamic rendering of components.</li>
+            <li><strong>ESLint & Babel</strong> – Ensured code quality, linting, and modern JavaScript transpilation during development.</li>
+            <li><strong>Responsive Design</strong> – Layout and styling tailored for both desktop and mobile using modern CSS techniques.</li>
+            <li><strong>Git &amp; GitHub</strong> – Version control and collaboration via GitHub for code management and hosting.</li>
+            </ul>
+            <hr>
+
+            <h3>Key Features</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+            <li>Search for professional bike fitters by region or name.</li>
+            <li>Displays detailed cards for each expert with contact info and location.</li>
+            <li>Client-side rendering with fast UI interaction and filtering.</li>
+            <li>Fully responsive layout for both mobile and desktop users.</li>
+            </ul>
+            <hr>
+
+            <h3>What I Learned</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+            <li>How to structure a project using the Vue 3 Composition API and single-file components.</li>
+            <li>Working with reactive data and conditional rendering in Vue.</li>
+            <li>Building responsive interfaces without a CSS framework.</li>
+            <li>Implementing dynamic search/filter functionality in a clean, performant way.</li>
+            <li>Using Git for version control and GitHub for project deployment or showcasing code.</li>
+            </ul>
+            <button class="btn" id="view-projectbtn">View Project Live</button>
+            <button class="btn" id="view-projectbtn-gh">View Project on GitHub</button>
             <div id="project4img" class="project4img">
-            <img src="./images/design4.png" style="width: 450px;" alt="Project 4" id="projimg">
+            <img src="./images/design4.png" alt="Project 4" id="projimg">
             </div>
         </div>
     </div>
@@ -64,6 +101,9 @@
     <script>
         document.getElementById('view-projectbtn').addEventListener('click', function() {
           window.open('https://bikefit-finder.netlify.app', '_blank');
+        });
+        document.getElementById('view-projectbtn-gh').addEventListener('click', function() {
+          window.open('https://github.com/NathanPattrsn/bikefit-finder-app-working', '_blank');
         });
       </script>
 </body>

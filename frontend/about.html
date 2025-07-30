@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <title>About Us | Nathan Patterson</title>
+    <title>About Me | Nathan Patterson</title>
 </head>
 <style>
     @media (max-width: 600px) {
@@ -36,6 +36,12 @@
 a {
     color:#13d4d4;
 }
+
+hr {
+    border: 1px solid #13d4d4;
+    width: 80%;
+    margin: 20px auto;
+}
 </style>
 <body>
     <!--Header-->
@@ -51,7 +57,7 @@ a {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="work.html">Our Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -62,19 +68,72 @@ a {
     <!-- Full-Screen Container -->
     <div id="particles-js" class="about-page">
         <!-- Central Content -->
-        <div class="center-content text-center">
-            <h1>About Me</h1>
 
-            <!-- About Us Text -->
-            <div class="about-text mt-3 pt-3">
-                <p>Hi, I’m Nathan — a passionate web designer and developer who creates engaging, user-friendly digital experiences.</p>
-                <p>I hold a BSc (Hons) in Web Design and Development from Edge Hill University and earned top marks in my Level 2 and 3 BTEC in Computer Science. I’m skilled in HTML, CSS, JavaScript, and design tools like Figma and Photoshop.</p>
-                <p>Previously, I worked full-time as a web developer, where I built and maintained websites and systems for a range of clients, focusing on accessibility and responsiveness.</p>
-                <p>I enjoy blending creativity with problem-solving, from crafting clean Figma interfaces to coding layouts that work seamlessly across devices. I'm always looking to grow, collaborate, and build meaningful projects.</p>
-                <p>Learn more on my <a href="https://www.linkedin.com/in/nathan-patterson-5b109b198/" target="_blank">LinkedIn</a>.</p>
+            <!-- About Me Text -->
+            <div class="center-content text-center projectcontent">
+                <h2>About Me</h2>
+                <p>Hi, I’m Nathan — a passionate web designer and developer who creates engaging, user-friendly digital experiences across web and mobile platforms. I enjoy crafting polished interfaces, solving complex problems, and building functional, real-world applications.</p>
+
+                <p>I hold a <strong>BSc (Hons) in Web Design and Development</strong> from Edge Hill University, and achieved top marks in Level 2 and 3 BTEC Computer Science. With a strong foundation in both design and development, I bridge the gap between front-end aesthetics and back-end functionality.</p>
+
+                <hr>
+
+                <h2>Skills & Tools</h2>
+                <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Languages & Frameworks:</strong> HTML, CSS, JavaScript (ES6+), React.js, Vue.js, React Native, Node.js</li>
+                <li><strong>UI/UX Design:</strong> Figma, Adobe Photoshop – for wireframing, prototyping, and visual design</li>
+                <li><strong>State Management:</strong> React Context, Vue reactivity</li>
+                <li><strong>Authentication:</strong> Clerk</li>
+                <li><strong>API & Backend:</strong> REST APIs, Express.js, Render</li>
+                <li><strong>Tools:</strong> Git & GitHub, Netlify, Expo EAS, Over-The-Air (OTA) updates</li>
+                <li><strong>Testing & Debugging:</strong> DevTools, CORS troubleshooting, responsive testing</li>
+                </ul>
+
+                <hr>
+
+                <h2>Featured Projects</h2>
+
+                <h3>Wallet App (React Native + Expo)</h3>
+                <p>A full-featured cross-platform finance app built with React Native. Users can register, log in, create, and manage transactions. Built with Clerk authentication, persistent user sessions, and Expo EAS for deployment.</p>
+
+                <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Built with:</strong> React Native, Expo, Clerk, Express, Render</li>
+                <li><strong>Key skills:</strong> Full-stack development, authentication, API integration, OTA updates</li>
+                </ul>
+
+                <h3>BikeFit Finder (Vue.js)</h3>
+                <p>A simple yet effective app that helps cyclists find local bike fitting professionals. Features a responsive design and dynamic search functionality for enhanced user experience.</p>
+
+                <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Built with:</strong> Vue 3, Vue CLI</li>
+                <li><strong>Key skills:</strong> Composition API, single-file components, responsive UI, filtering logic</li>
+                </ul>
+
+                <h3>Rainbow Six Operator Showcase (React.js)</h3>
+                <p>A themed showcase app featuring Rainbow Six Siege operators. Includes dynamic routing, responsive UI, and embedded 3D weapon previews using the Sketchfab API.</p>
+
+                <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Built with:</strong> React.js, Tailwind CSS, Sketchfab API</li>
+                <li><strong>Key skills:</strong> Dynamic routing, API integration, design system, 3D asset embedding</li>
+                </ul>
+
+                <hr>
+
+                <h2>Experience</h2>
+                <p>I previously worked full-time as a web developer, building and maintaining responsive websites and internal systems for a variety of clients. I focused on clean design, accessibility, and cross-browser/device compatibility.</p>
+
+                <p>Outside of professional work, I consistently take on side projects to push my skills further — building everything from showcase web apps to real-world mobile tools with secure backends.</p>
+
+                <hr>
+
+                <h2>Let's Connect</h2>
+                <p>I’m always looking to collaborate on meaningful projects or explore new opportunities. Check out more of my work here on my portfolio, or connect with me on <a href="https://www.linkedin.com/in/nathan-patterson-5b109b198/" target="_blank">LinkedIn</a>.</p>
+
+                <div class="button-container">
+                    <button onclick="location.href='contact.html'" class="btn contactusbtn">Contact Me</button>
+                </div>
             </div>
         </div>
-    </div>
 
     <!-- Footer -->
     <!-- <footer>
@@ -84,5 +143,10 @@ a {
     <!-- Custom JavaScript -->
     <script src="./js/index.js"></script>
     <script src="./js/particles-config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.center-content').classList.add('loaded');
+        });
+    </script>
 </body>
 </html>

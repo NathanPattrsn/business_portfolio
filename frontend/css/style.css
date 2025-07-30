@@ -48,7 +48,7 @@ nav {
     opacity: 1 !important; /* Fade in after 1.2 seconds */
 }
 
-.viewworkbtn, .contactusbtn {
+.viewworkbtn, .contactusbtn, .contactformbtn {
     background-color: #000000 !important;
     color: #ffffff !important;
     border: 2px solid #13d4d4 !important;
@@ -60,7 +60,7 @@ nav {
     text-decoration: none !important; /* Remove underline */
 }
 
-.viewworkbtn:hover, .contactusbtn:hover {
+.viewworkbtn:hover, .contactusbtn:hover, .contactformbtn:hover {
     background-color: #13d4d4 !important;
     color: #000000 !important;
 }
@@ -237,6 +237,19 @@ nav {
 
     .project1img img, .project2img img, .project3img img, .project4img img, .project5img img, .project6img img {
         max-width: 300px !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
+      }
+}
+
+@media (min-width: 991px) {
+    .projectcontent {
+        overflow-y: scroll !important;
+        max-height: 600px !important;
+    }
+
+    .project1img img, .project2img img, .project3img img, .project4img img, .project5img img, .project6img img {
+        max-width: 550px !important;
         margin-bottom: 10px !important;
         text-align: center !important;
       }
