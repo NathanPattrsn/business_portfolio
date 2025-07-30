@@ -235,6 +235,11 @@ nav {
         max-height: 550px !important;
     }
 
+     .aboutmecontent {
+        overflow-y: scroll !important;
+        max-height: 550px !important;
+    }
+
     .project1img img, .project2img img, .project3img img, .project4img img, .project5img img, .project6img img {
         max-width: 300px !important;
         margin-bottom: 10px !important;
@@ -244,6 +249,11 @@ nav {
 
 @media (min-width: 991px) {
     .projectcontent {
+        overflow-y: scroll !important;
+        max-height: 600px !important;
+    }
+
+    .aboutmecontent {
         overflow-y: scroll !important;
         max-height: 600px !important;
     }
