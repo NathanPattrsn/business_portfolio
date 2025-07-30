@@ -236,6 +236,7 @@ nav {
     }
 
      .aboutmecontent {
+        margin-top: 40px !important;
         overflow-y: scroll !important;
         max-height: 550px !important;
     }
