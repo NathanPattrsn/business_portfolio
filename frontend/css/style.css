@@ -37,6 +37,34 @@ nav {
     background-color: #000000;
 }
 
+/* Move the fade-in effect to CSS instead of jQuery */
+.button-container {
+    opacity: 0 !important; /* Initially hidden */
+    transition: opacity 0.6s ease !important;
+    transition-delay: 1.2s !important; /* Delay the fade-in effect */
+}
+
+.center-content.loaded .button-container {
+    opacity: 1 !important; /* Fade in after 1.2 seconds */
+}
+
+.viewworkbtn, .contactusbtn {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #13d4d4 !important;
+    padding: 10px 20px !important; /* Add some padding to the button */
+    border-radius: 5px !important; /* Add rounded corners */
+    cursor: pointer !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    text-decoration: none !important; /* Remove underline */
+}
+
+.viewworkbtn:hover, .contactusbtn:hover {
+    background-color: #13d4d4 !important;
+    color: #000000 !important;
+}
+
 .about-page {
     position: relative;
     height: 100vh;
@@ -207,7 +235,7 @@ nav {
         max-height: 550px !important;
     }
 
-    .project1img img, .project2img img, .project3img img, .project4img img, .project5img img {
+    .project1img img, .project2img img, .project3img img, .project4img img, .project5img img, .project6img img {
         max-width: 300px !important;
         margin-bottom: 10px !important;
         text-align: center !important;

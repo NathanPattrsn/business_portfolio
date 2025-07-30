@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <title>R6S Beginner Website | Nathan Patterson</title>
+</head>
+<style>
+    hr {
+        border: 1px solid #13d4d4;
+        width: 80%;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 10px;">
+              </a>
+              <p class="navbar-brand">Nathan <span class="underline">Patterson</span></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="work.html">Our Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <a href="work.html" class="back-arrow" style="position: absolute; top: 120px; left: 20px; font-size: 24px; text-decoration: none;">
+        <i class="fa-solid fa-chevron-left"></i>
+    </a>
+
+    <!-- Full-Screen Container -->
+    <div id="particles-js" class="project3-page">
+        <!-- Central Content -->
+        <div class="center-content text-center projectcontent">
+            <h1>React Native Wallet App – Personal Finance Tracker</h1>
+            <p>The Wallet App is a cross-platform mobile and web application that allows users to manage their personal finances by tracking income and expenses. Users can view a dashboard summary, add new transactions, delete old ones, and securely log in/out using modern authentication. <strong>It currently isn't live but I can let you access it yourself upon request.</strong></p>
+            <hr>
+            <h3>Purpose & Functionality</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Dashboard Overview:</strong> Visualizes user's current financial state, showing total balance, income, and expenses.</li>
+                <li><strong>Transaction Management:</strong> Users can add or delete transactions, with real-time updates reflected in the dashboard.</li>
+                <li><strong>Authentication:</strong> Secure login and logout features using Clerk Authentication for user account handling.</li>
+                <li><strong>Rate Limiting:</strong> Prevents abuse by limiting the number of API requests per user in a given time window.</li>
+                <li><strong>API Communication:</strong> Frontend communicates with a hosted backend API to store and retrieve user-specific data.</li>
+                <li><strong>Mobile & Web Compatibility:</strong>Runs on iOS, Android, and the web using the same codebase thanks to <strong>Expo</strong> and <strong>React Native Web</strong>.</li>
+            </ul>
+            <h3>Tools & Technologies Used</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>React Native with Expo</strong> – Built a cross-platform mobile-first UI compatible with both iOS and Android using Expo CLI for rapid development and testing.</li>
+                <li><strong>React Native Web</strong> – Enabled web browser support using the same codebase, allowing seamless deployment for mobile and web.</li>
+                <li><strong>React Navigation</strong> – Handled screen routing and user navigation flows across different views within the app.</li>
+                <li><strong>Clerk</strong> – Integrated user authentication and session management across platforms with support for secure login and logout flows.</li>
+                <li><strong>AsyncStorage</strong> – Used for local token storage and session persistence on mobile devices.</li>
+                <li><strong>Node.js & Express.js</strong> – Created a REST API for handling CRUD operations on transactions and verifying user authentication.</li>
+                <li><strong>Render</strong> – Hosted the backend server and deployed the API with automatic scaling and HTTPS support.</li>
+                <li><strong>CORS Configuration</strong> – Managed cross-origin resource sharing to allow frontend access from web and mobile clients.</li>
+                <li><strong>Middleware</strong> – Implemented features like rate limiting and authentication validation to improve backend performance and security.</li>
+                <li><strong>JWT (JSON Web Tokens)</strong> – Enabled secure session management and protected API routes with user-specific access control.</li>
+                <li><strong>EAS (Expo Application Services)</strong> – Used for building and deploying native binaries and enabling over-the-air (OTA) updates without store resubmission.</li>
+                <li><strong>Over-the-Air (OTA) Updates</strong> – Deployed instant updates to users via Expo without needing app store approval cycles.</li>
+                <li><strong>Sentry</strong> – Integrated for optional error tracking and monitoring in production environments for improved debugging and user experience.</li>
+            </ul>
+            <hr>
+            <h3>What I Learned</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Cross-Platform App Development</strong> – Built and deployed a production-ready mobile and web app from scratch using React Native with Expo and React Native Web.</li>
+                <li><strong>Authentication Flows</strong> – Implemented user login, registration, and session management using Clerk across both web and native platforms.</li>
+                <li><strong>RESTful API with Access Control</strong> – Developed a secure Node.js & Express backend with route protection using JWT authentication and custom middleware.</li>
+                <li><strong>API Integration & CORS Management</strong> – Resolved complex CORS issues and ensured consistent API integration across mobile and web clients.</li>
+                <li><strong>App Deployment & OTA Updates</strong> – Leveraged Expo EAS to build native app binaries and deliver instant over-the-air (OTA) updates without store delays.</li>
+                <li><strong>State Management & Persistence</strong> – Managed application state and persisted user sessions using AsyncStorage and Clerk’s session APIs.</li>
+            </ul>
+            <hr>
+            <h3>Portfolio Value</h3>
+            <ul class="text-left" style="display: inline-block; margin-bottom: 20px;">
+                <li><strong>Full-Stack Development</strong> – Worked across the entire stack, from designing and implementing backend APIs to building interactive frontend user interfaces.</li>
+                <li><strong>Modern Tools & Platforms</strong> – Utilized tools like Clerk (auth), Render (backend hosting), and Expo (cross-platform development) to streamline development and deployment.</li>
+                <li><strong>Real-World Problem Solving</strong> – Addressed practical challenges including CORS issues, mobile vs. web compatibility, and production deployment strategies.</li>
+                <li><strong>Polished & Secure User Experience</strong> – Focused on creating smooth, user-friendly interfaces while applying authentication and authorization best practices to secure user data.</li>
+            </ul>
+            <button class="btn" id="view-projectbtn-gh">View Project on GitHub</button>
+            <div id="project6img" class="project6img">
+                <iframe width="200" height="355" src="https://www.youtube.com/embed/14pkJGtRIJY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>&copy; 2023 Nathan Patterson. All rights reserved.</p>
+    </footer> -->
+
+    <!-- Custom JavaScript -->
+    <script src="./js/index.js"></script>
+    <script src="./js/particles-config.js"></script>
+
+    <script>
+        document.getElementById('view-projectbtn-gh').addEventListener('click', function() {
+          window.open('https://github.com/NathanPattrsn/react-native-wallet', '_blank');
+        });
+      </script>
+</body>
+</html>

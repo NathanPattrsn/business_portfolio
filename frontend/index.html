@@ -43,14 +43,21 @@
             <p class="tagline">Digital Designs You Will Love</p>
 
             <!-- Testimonial Section -->
-            <div class="testimonial">
+            <div class="testimonial mb-4">
                 <p>“Provided excellent service, quick responses, and very thorough.”</p>
                 <p class="author">- <a href="https://www.becspencerdesigns.co.uk/" target="_blank" class="author-link">Bec Spencer Designs</a></p>
                 <div class="stars">
                     <span>★★★★★</span>
                 </div>
             </div>
+
+            <div class="button-container">
+                <button onclick="location.href='work.html'" class="btn viewworkbtn">View Our Work</button>
+                <button onclick="location.href='contact.html'" class="btn contactusbtn">Contact Us</button>
+            </div>
         </div>
+
+        
     </div>
 
     <!-- Footer -->
@@ -61,5 +68,10 @@
     <!-- Custom JavaScript -->
     <script src="./js/index.js"></script>
     <script src="./js/particles-config.js"></script> <!-- Include Particles.js config file -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.center-content').classList.add('loaded');
+        });
+    </script>
 </body>
 </html>
